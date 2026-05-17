@@ -7,6 +7,7 @@ data[cols]<-lapply(data[cols], function(x) ifelse(x == 0, NA, x))
 summary(data)
 colSums(is.na(data))
 
+
 #Train and test sets
 set.seed(1234)
 train_idx<-sample(1:nrow(data), 0.8*nrow(data))
